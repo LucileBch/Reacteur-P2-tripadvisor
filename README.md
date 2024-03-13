@@ -1,7 +1,5 @@
 # Reacteur-P2-tripadvisor
 
-## Presentation
-
 **TripAdvisor copy website** made in context of training at [@Le Reacteur](https://github.com/lereacteur) bootcamp.
 
 - [x] **HTML** & **CSS** static integration
