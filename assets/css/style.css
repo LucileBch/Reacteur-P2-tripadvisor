@@ -210,6 +210,7 @@ h1 > span {
   cursor: pointer;
 }
 
+/* Main : section 1 - Div Subnav */
 .presentation__subnav {
   display: flex;
   justify-content: space-between;
@@ -242,6 +243,7 @@ h1 > span {
   gap: 10%;
 }
 
+/* Main : section 2 - Div Infos */
 .organisation__infos {
   width: 50%;
 }
@@ -253,6 +255,7 @@ h1 > span {
   line-height: 24px;
 }
 
+/* Main : section 2 - Aside Plan */
 .organisation__plan {
   width: 40%;
 }
@@ -283,7 +286,7 @@ h1 > span {
   border-radius: 0 0 16px 16px;
 }
 
-/* Section 3 */
+/* Main : Section 3 */
 #immanquables {
   margin-bottom: 120px;
 }
@@ -293,6 +296,7 @@ h1 > span {
   margin-bottom: 40px;
 }
 
+/* Main : section 3 - Div Infos */
 .bloc__infos {
   flex: 1;
   padding-right: 30px;
@@ -311,6 +315,7 @@ h1 > span {
   text-decoration: underline;
 }
 
+/* Main : section 3 - Carousel */
 .bloc__carousel {
   display: flex;
   flex-wrap: nowrap;
@@ -416,9 +421,7 @@ article {
   line-height: 14px;
 }
 
-/* Section 3 */
-
-/* Section 4 */
+/* Main : Section 4 */
 #guides {
   margin-bottom: 120px;
 }
@@ -456,8 +459,6 @@ article {
   font-weight: bold;
   font-family: TS-Med;
 }
-
-/* Section 4 */
 
 /* Footer */
 footer {
