@@ -26,10 +26,6 @@ git clone https://github.com/LucileBch/Reacteur-P2-tripadvisor.git
 
 2. Open `index.html` file in your browser
 
-## Authors
-
-- [@lucilebouchire](https://github.com/LucileBch)
-
 ## Thanks
 
 Thanks to :
