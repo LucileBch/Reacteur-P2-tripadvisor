@@ -177,6 +177,12 @@ h1 > span {
   height: 100%;
 }
 
+.presentation__pictures--unique > img:hover,
+.presentation__pictures--doble img:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
 .presentation__pictures--doble {
   display: flex;
   flex-direction: column;
@@ -221,6 +227,11 @@ h1 > span {
   display: flex;
   gap: 10px;
   align-items: center;
+  color: #000000;
+}
+
+.presentation__subnav span:hover {
+  text-decoration: underline;
   color: #545454;
 }
 
