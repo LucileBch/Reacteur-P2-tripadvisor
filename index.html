@@ -20,11 +20,12 @@
   <body>
     <header>
       <div class="container container__header">
-        <img
-          class="header__logo"
-          src="./assets/img/logo-tripadvisor.svg"
-          alt="logo de TripAdvisor"
-        />
+        <a href="#"
+          ><img
+            class="header__logo"
+            src="./assets/img/logo-tripadvisor.svg"
+            alt="logo de TripAdvisor"
+        /></a>
         <nav class="header__navbar">
           <ul>
             <li>
@@ -53,8 +54,128 @@
       </div>
     </header>
 
-    <main></main>
+    <main>
+      <div class="container">
+        <!-- First Section -->
+        <section id="presentation">
+          <!-- Div Infos -->
+          <div class="presentation__infos">
+            <h1><span>Explorez </span>Paris</h1>
+            <p class="presentation__paragraph">
+              Les revenus influencent le choix des expériences présentées sur
+              cette page : <a href="#">en savoir plus</a>.
+            </p>
+            <nav class="presentation__navbar">
+              <a class="presentation__navbar--option" href="#"
+                ><span>Hôtels</span> <i class="fa-solid fa-bed"></i
+              ></a>
+              <a class="presentation__navbar--option" href="#"
+                ><span>Locations de vacances</span>
+                <i class="fa-solid fa-house-lock"></i
+              ></a>
+              <a class="presentation__navbar--option" href="#"
+                ><span>Activités</span> <i class="fa-solid fa-ticket"></i
+              ></a>
+              <a class="presentation__navbar--option" href="#"
+                ><span>Restaurants </span><i class="fa-solid fa-utensils"></i
+              ></a>
+              <a class="presentation__navbar--option" href="#"
+                ><span>Forums de voyage </span
+                ><i class="fa-regular fa-message"></i
+              ></a>
+              <a class="presentation__navbar--option" href="#"
+                ><span>Plus</span> <i class="fa-solid fa-ellipsis"></i
+              ></a>
+            </nav>
+          </div>
 
-    <footer></footer>
+          <!-- Div Pictures -->
+          <div class="presentation__pictures">
+            <div class="presentation__pictures--unique">
+              <img
+                src="./assets/img/paris-first-pic.jpg"
+                alt="photo des bords de Seine à Paris"
+              />
+              <button class="presentation__pictures--button">
+                <i class="fa-regular fa-image"></i>Toutes les photos
+              </button>
+            </div>
+            <div class="presentation__pictures--doble">
+              <img
+                src="./assets/img/paris-second-pic.jpg"
+                alt="photo de deux personnes sur un scooter"
+              />
+              <img
+                src="./assets/img/paris-third-pic.jpg"
+                alt="photo de la tour eiffel"
+              />
+            </div>
+          </div>
+
+          <!-- Div Subnav -->
+          <div class="presentation__subnav">
+            <nav>
+              <a href="#"
+                ><span>Europe</span> <i class="fa-solid fa-angle-right"></i
+              ></a>
+              <a href="#"
+                ><span>France</span> <i class="fa-solid fa-angle-right"></i
+              ></a>
+              <a href="#"
+                ><span>Île-de-France</span>
+                <i class="fa-solid fa-angle-right"></i
+              ></a>
+              <a href="#"
+                ><span>Paris</span> <i class="fa-solid fa-sort-down"></i
+              ></a>
+            </nav>
+            <p>Visiter : Paris</p>
+          </div>
+        </section>
+        <!-- End First Section -->
+
+        <!-- Second Section -->
+        <section id="organisation">
+          <div class="organisation__infos">
+            <h2>La Ville Lumière éblouit en tous points</h2>
+            <p class="organisation__paragraph">
+              Aucun autre endroit au monde ne fait autant rêver que Paris. La
+              ville séduit par son art, son architecture, sa culture et sa
+              cuisine, mais il y a aussi des merveilles plus discrètes qui
+              n’attendent qu’à être explorées : les ruelles pavées pittoresques,
+              les pâtisseries au coin de la rue et les petits bistrots douillets
+              qui vous invitent à boire un verre de beaujolais. Préparez-vous à
+              vous approprier Paris.
+            </p>
+          </div>
+
+          <aside class="organisation__plan">
+            <div class="organisation__plan--text">
+              <h3>Paris : commencez à organiser !</h3>
+              <p>
+                Créez un voyage pour enregistrer et organiser toutes vos idées
+                et les visualiser sur une carte.
+              </p>
+              <button class="organisation__plan--button">
+                Créez un voyage
+              </button>
+            </div>
+            <div>
+              <img
+                class="organisation__plan--picture"
+                src="./assets/img/paris-map.png"
+                alt="carte avec points clés"
+              />
+            </div>
+          </aside>
+        </section>
+        <!-- End Second Section -->
+      </div>
+    </main>
+
+    <footer>
+      <img src="./assets/img/logo-favicon.svg" alt="logo de TripAdvisor" />
+      <p>Made at <a href="#">Le Reacteur</a> by <a href="#">Marty McFly</a></p>
+    </footer>
   </body>
 </html>
