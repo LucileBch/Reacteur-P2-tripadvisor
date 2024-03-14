@@ -325,15 +325,15 @@ h1 > span {
   flex: 3;
 }
 
-.bloc__carousel:hover {
+.bloc__carousel > article :hover {
   cursor: pointer;
 }
 
-.bloc__carousel:hover h5 {
+.bloc__carousel > article:hover h5 {
   text-decoration: underline;
 }
 
-.bloc__carousel:hover img {
+.bloc__carousel > article:hover img {
   opacity: 0.8;
 }
 
