@@ -3,8 +3,9 @@
 **TripAdvisor copy website** made in context of training at [@Le Reacteur](https://github.com/lereacteur) bootcamp.
 
 - [x] **HTML** & **CSS** static integration
+- [x] Refactoring with **Sass**
 - [ ] **Responsive**
-- [ ] dynamic interaction in **Vanilla JS**
+- [ ] Dynamic interaction in **Vanilla JS**
 
 ## Content
 
@@ -15,6 +16,7 @@
 
 - HTML 5
 - CSS 3
+- Sass
 
 ## Installation
 
@@ -24,7 +26,13 @@
 git clone https://github.com/LucileBch/Reacteur-P2-tripadvisor.git
 ```
 
-2. Open `index.html` file in your browser
+2. Run :
+
+```bash
+npm run sass
+```
+
+3. Open `index.html` file in your browser
 
 ## Thanks
 
