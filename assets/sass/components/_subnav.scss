@@ -9,6 +9,12 @@
   @media (max-width: 1184px) {
     flex-wrap: wrap;
   }
+  // responsive BreakingPoint 768px
+  @media (max-width: 768px) {
+    flex-wrap: nowrap;
+    overflow: hidden;
+    overflow-x: scroll;
+  }
 
   &__option {
     display: flex;
@@ -27,7 +33,10 @@
     // responsive BreakingPoint 1184px
     @media (max-width: 1184px) {
       width: calc((100% - 3rem) / 4);
-      height: inherit;
+    }
+    // responsive BreakingPoint 768px
+    @media (max-width: 768px) {
+      flex-shrink: 0;
     }
 
     &:hover {

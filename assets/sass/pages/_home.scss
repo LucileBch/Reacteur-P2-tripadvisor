@@ -41,6 +41,10 @@ h1 > span {
     @media (max-width: 1024px) {
       width: 77%;
     }
+    // responsive BreakingPoint 768px
+    @media (max-width: 768px) {
+      width: 100%;
+    }
 
     > img {
       width: 100%;
@@ -68,6 +72,10 @@ h1 > span {
     // responsive BreakingPoint 1024px
     @media (max-width: 1024px) {
       width: 33%;
+    }
+    // responsive BreakingPoint 768px
+    @media (max-width: 768px) {
+      display: none;
     }
 
     > img {
@@ -102,6 +110,10 @@ h1 > span {
     font-size: 2rem;
     line-height: 2.4rem;
     color: $subtitles-color;
+    // responsive BreakingPoint 768px
+    @media (max-width: 768px) {
+      font-size: 1.6rem;
+    }
   }
 
   // responsive BreakingPoint 1024px
@@ -119,11 +131,21 @@ h1 > span {
 .carousel-container {
   display: flex;
   margin-bottom: 40px;
+
+  // responsive BreakingPoint 768px
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 }
 
 .documentation {
   flex: 1;
-  padding-right: 30px;
+  padding-right: 3rem;
+
+  // responsive BreakingPoint 768px
+  @media (max-width: 768px) {
+    margin-bottom: 20px;
+  }
 
   &__content {
     margin: 20px 0;
