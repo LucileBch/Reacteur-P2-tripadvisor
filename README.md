@@ -4,7 +4,7 @@
 
 - [x] **HTML** & **CSS** static integration
 - [x] Refactoring with **Sass**
-- [ ] **Responsive**
+- [x] **Responsive**
 - [ ] Dynamic interaction in **Vanilla JS**
 
 ## Content
