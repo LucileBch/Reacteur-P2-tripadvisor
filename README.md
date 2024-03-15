@@ -26,13 +26,21 @@
 git clone https://github.com/LucileBch/Reacteur-P2-tripadvisor.git
 ```
 
-2. Run :
+2. Open `index.html` file in your browser
+
+3. For styling modification :
+
+- Install dependencies :
+
+```bash
+npm install
+```
+
+- Compilation :
 
 ```bash
 npm run sass
 ```
-
-3. Open `index.html` file in your browser
 
 ## Thanks
 
