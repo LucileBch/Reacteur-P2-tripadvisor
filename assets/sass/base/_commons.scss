@@ -1,0 +1,17 @@
+/* ----- Common rules ----- */
+html {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1135px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}

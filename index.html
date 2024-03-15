@@ -4,15 +4,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Import style sheets, fontAwesome and fonts -->
-    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <!-- Import style sheet, fontAwesome-->
     <link rel="stylesheet" href="./assets/css/style.css" />
     <script
       src="https://kit.fontawesome.com/0a1d6f439a.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./assets/css/fonts.css" />
-    <link rel="icon" href="./assets/img/logo-favicon.svg" type="image.png" />
+    <link
+      rel="icon"
+      href="./assets/img/favicon-tripadvisor.svg"
+      type="image.png"
+    />
     <title>TripAdvisor 🌈</title>
   </head>
 
@@ -21,7 +23,7 @@
     <!-- Header -->
     <header>
       <!-- Header : logo -->
-      <div class="container container__header">
+      <div class="container">
         <a href="#"
           ><img
             class="header__logo"
@@ -30,26 +32,26 @@
         /></a>
 
         <!-- Header : nav -->
-        <nav class="header__navbar">
+        <nav class="navbar">
           <ul>
             <li>
-              <a class="header__navbar--link" href="#"
+              <a class="navbar__link" href="#"
                 ><i class="fa-solid fa-pencil"></i>Avis</a
               >
             </li>
             <li>
-              <a class="header__navbar--link" href="#"
+              <a class="navbar__link" href="#"
                 ><i class="fa-regular fa-heart"></i>Voyages</a
               >
             </li>
             <li>
-              <a class="header__navbar--link" href="#"
+              <a class="navbar__link" href="#"
                 ><i class="fa-regular fa-bell"></i>Alertes</a
               >
             </li>
-            <button class="header__navbar--button">Connectez-vous</button>
+            <button class="btn button--round">Connectez-vous</button>
             <li>
-              <a class="header__navbar--link" href="#">
+              <a class="navbar__link" href="#">
                 <i class="fa-solid fa-cart-shopping"></i>Panier</a
               >
             </li>
@@ -64,48 +66,49 @@
         <!-- Main : Section 1 - #presentation -->
         <section id="presentation">
           <!-- Section 1 - #presentation : Div Infos -->
-          <div class="presentation__infos">
+          <div class="infos">
             <h1><span>Explorez </span>Paris</h1>
-            <p class="presentation__paragraph">
+            <p class="infos__content">
               Les revenus influencent le choix des expériences présentées sur
               cette page : <a href="#">en savoir plus</a>.
             </p>
-            <nav class="presentation__navbar">
-              <a class="presentation__navbar--option" href="#"
+            <nav class="subnav">
+              <a class="subnav__option" href="#"
                 ><span>Hôtels</span> <i class="fa-solid fa-bed"></i
               ></a>
-              <a class="presentation__navbar--option" href="#"
+              <a class="subnav__option" href="#"
                 ><span>Locations de vacances</span>
                 <i class="fa-solid fa-house-lock"></i
               ></a>
-              <a class="presentation__navbar--option" href="#"
+              <a class="subnav__option" href="#"
                 ><span>Activités</span> <i class="fa-solid fa-ticket"></i
               ></a>
-              <a class="presentation__navbar--option" href="#"
+              <a class="subnav__option" href="#"
                 ><span>Restaurants </span><i class="fa-solid fa-utensils"></i
               ></a>
-              <a class="presentation__navbar--option" href="#"
+              <a class="subnav__option" href="#"
                 ><span>Forums de voyage </span
                 ><i class="fa-regular fa-message"></i
               ></a>
-              <a class="presentation__navbar--option" href="#"
+              <a class="subnav__option" href="#"
                 ><span>Plus</span> <i class="fa-solid fa-ellipsis"></i
               ></a>
             </nav>
           </div>
 
           <!-- Section 1 - #presentation : Div Pictures -->
-          <div class="presentation__pictures">
-            <div class="presentation__pictures--unique">
+          <div class="images">
+            <div class="images__unique">
               <img
                 src="./assets/img/paris-first-pic.jpg"
                 alt="photo des bords de Seine à Paris"
               />
-              <button class="presentation__pictures--button">
-                <i class="fa-regular fa-image"></i>Toutes les photos
+              <button class="btn button--round">
+                <i class="fa-regular fa-image"></i
+                ><span>Toutes les photos</span>
               </button>
             </div>
-            <div class="presentation__pictures--doble">
+            <div class="images__doble">
               <img
                 src="./assets/img/paris-second-pic.jpg"
                 alt="photo de deux personnes sur un scooter"
@@ -118,19 +121,19 @@
           </div>
 
           <!-- Section 1 - #presentation : Div Subnav -->
-          <div class="presentation__subnav">
-            <nav>
-              <a href="#"
+          <div class="subnav--mini">
+            <nav class="navmini">
+              <a class="navmini__link" href="#"
                 ><span>Europe</span> <i class="fa-solid fa-angle-right"></i
               ></a>
-              <a href="#"
+              <a class="navmini__link" href="#"
                 ><span>France</span> <i class="fa-solid fa-angle-right"></i
               ></a>
-              <a href="#"
+              <a class="navmini__link" href="#"
                 ><span>Île-de-France</span>
                 <i class="fa-solid fa-angle-right"></i
               ></a>
-              <a href="#"
+              <a class="navmini__link" href="#"
                 ><span>Paris</span> <i class="fa-solid fa-sort-down"></i
               ></a>
             </nav>
@@ -142,9 +145,9 @@
         <!-- Main : Section 2 - #organisation -->
         <section id="organisation">
           <!-- Section 2 - #organisation : Div Infos -->
-          <div class="organisation__infos">
+          <div class="description">
             <h2>La Ville Lumière éblouit en tous points</h2>
-            <p class="organisation__paragraph">
+            <p class="description__content">
               Aucun autre endroit au monde ne fait autant rêver que Paris. La
               ville séduit par son art, son architecture, sa culture et sa
               cuisine, mais il y a aussi des merveilles plus discrètes qui
@@ -156,20 +159,18 @@
           </div>
 
           <!-- Section 2 - #organisation : Aside Plan -->
-          <aside class="organisation__plan">
-            <div class="organisation__plan--text">
+          <aside class="aside">
+            <div class="aside__content">
               <h3>Paris : commencez à organiser !</h3>
               <p>
                 Créez un voyage pour enregistrer et organiser toutes vos idées
                 et les visualiser sur une carte.
               </p>
-              <button class="organisation__plan--button">
-                Créez un voyage
-              </button>
+              <button class="btn button--square">Créez un voyage</button>
             </div>
             <div>
               <img
-                class="organisation__plan--picture"
+                class="aside__image"
                 src="./assets/img/paris-map.png"
                 alt="carte avec points clés"
               />
@@ -183,20 +184,20 @@
           <h2>Paris : les immanquables</h2>
 
           <!-- Section 3 - #immanquables : Div Se-divertir -->
-          <div class="bloc">
+          <div class="carousel-container">
             <!-- Se divertir : Div Infos  -->
-            <div class="bloc__infos">
+            <div class="documentation">
               <h4>Se divertir</h4>
-              <p class="bloc__infos--text">
+              <p class="documentation__content">
                 Des lieux à voir, des rues à explorer et des expériences
                 emblématiques à Paris.
               </p>
-              <a class="bloc__infos--link" href="#">Tout afficher</a>
+              <a class="documentation__link" href="#">Tout afficher</a>
             </div>
             <!-- Se divertir : carousel  -->
-            <div class="bloc__carousel">
-              <article>
-                <div class="bloc__carousel--picture">
+            <div class="display">
+              <article class="column">
+                <div class="column__picture">
                   <button class="circle__heart">
                     <i class="fa-regular fa-heart"></i>
                   </button>
@@ -204,14 +205,14 @@
                     src="./assets/img/paris-visit1.jpg"
                     alt="photo de la tour eiffel"
                   />
-                  <div class="carousel__brand">
+                  <div class="column__brand">
                     <i class="fa-brands fa-earlybirds"></i>
                     <p>2022</p>
                   </div>
                 </div>
-                <div class="bloc__carousel--text">
+                <div class="column__content">
                   <h5>Tour Eiffel</h5>
-                  <div class="carousel__rank">
+                  <div class="column__rank">
                     <i class="fa-solid fa-circle"></i>
                     <i class="fa-solid fa-circle"></i>
                     <i class="fa-solid fa-circle"></i>
@@ -226,8 +227,8 @@
                 </div>
               </article>
 
-              <article>
-                <div class="bloc__carousel--picture">
+              <article class="column">
+                <div class="column__picture">
                   <button class="circle__heart">
                     <i class="fa-regular fa-heart"></i>
                   </button>
@@ -235,14 +236,14 @@
                     src="./assets/img/paris-visit2.jpg"
                     alt="photo de l'arc de triomphe'"
                   />
-                  <div class="carousel__brand">
+                  <div class="column__brand">
                     <i class="fa-brands fa-earlybirds"></i>
                     <p>2022</p>
                   </div>
                 </div>
-                <div class="bloc__carousel--text">
+                <div class="column__content">
                   <h5>Arc de Triomphe</h5>
-                  <div class="carousel__rank">
+                  <div class="column__rank">
                     <i class="fa-solid fa-circle"></i>
                     <i class="fa-solid fa-circle"></i>
                     <i class="fa-solid fa-circle"></i>
@@ -254,8 +255,8 @@
                 </div>
               </article>
 
-              <article>
-                <div class="bloc__carousel--picture">
+              <article class="column">
+                <div class="column__picture">
                   <button class="circle__heart">
                     <i class="fa-regular fa-heart"></i>
                   </button>
@@ -263,14 +264,14 @@
                     src="./assets/img/paris-visit3.jpg"
                     alt="photo du musée du louvre"
                   />
-                  <div class="carousel__brand">
+                  <div class="column__brand">
                     <i class="fa-brands fa-earlybirds"></i>
                     <p>2022</p>
                   </div>
                 </div>
-                <div class="bloc__carousel--text">
+                <div class="column__content">
                   <h5>Musée du Louvre</h5>
-                  <div class="carousel__rank">
+                  <div class="column__rank">
                     <i class="fa-solid fa-circle"></i>
                     <i class="fa-solid fa-circle"></i>
                     <i class="fa-solid fa-circle"></i>
@@ -282,8 +283,8 @@
                 </div>
               </article>
 
-              <article>
-                <div class="bloc__carousel--picture">
+              <article class="column">
+                <div class="column__picture">
                   <button class="circle__heart">
                     <i class="fa-regular fa-heart"></i>
                   </button>
@@ -291,14 +292,14 @@
                     src="./assets/img/paris-visit4.jpg"
                     alt="photo du musée rodin"
                   />
-                  <div class="carousel__brand">
+                  <div class="column__brand">
                     <i class="fa-brands fa-earlybirds"></i>
                     <p>2022</p>
                   </div>
                 </div>
-                <div class="bloc__carousel--text">
-                  <h5>Musée rodin</h5>
-                  <div class="carousel__rank">
+                <div class="column__content">
+                  <h5>Musée Rodin</h5>
+                  <div class="column__rank">
                     <i class="fa-solid fa-circle"></i>
                     <i class="fa-solid fa-circle"></i>
                     <i class="fa-solid fa-circle"></i>
@@ -310,23 +311,23 @@
                 </div>
               </article>
 
-              <article>
-                <div class="bloc__carousel--picture">
+              <article class="column">
+                <div class="column__picture">
                   <button class="circle__heart">
                     <i class="fa-regular fa-heart"></i>
                   </button>
                   <img
                     src="./assets/img/paris-visit5.jpg"
-                    alt="photo de la cathedrale de notre dame de paris"
+                    alt="photo de la cathédrale notre dame de paris"
                   />
-                  <div class="carousel__brand">
+                  <div class="column__brand">
                     <i class="fa-brands fa-earlybirds"></i>
                     <p>2022</p>
                   </div>
                 </div>
-                <div class="bloc__carousel--text">
+                <div class="column__content">
                   <h5>Cathédrale Notre-Dame de Paris</h5>
-                  <div class="carousel__rank">
+                  <div class="column__rank">
                     <i class="fa-solid fa-circle"></i>
                     <i class="fa-solid fa-circle"></i>
                     <i class="fa-solid fa-circle"></i>
@@ -338,23 +339,23 @@
                 </div>
               </article>
 
-              <article>
-                <div class="bloc__carousel--picture">
+              <article class="column">
+                <div class="column__picture">
                   <button class="circle__heart">
                     <i class="fa-regular fa-heart"></i>
                   </button>
                   <img
                     src="./assets/img/paris-visit6.jpg"
-                    alt="photo de la librairie shakespear and company"
+                    alt="photo de la Librairie Shakespear and Company"
                   />
-                  <div class="carousel__brand">
+                  <div class="column__brand">
                     <i class="fa-brands fa-earlybirds"></i>
                     <p>2022</p>
                   </div>
                 </div>
-                <div class="bloc__carousel--text">
+                <div class="column__content">
                   <h5>Librairie Shakespear and Company</h5>
-                  <div class="carousel__rank">
+                  <div class="column__rank">
                     <i class="fa-solid fa-circle"></i>
                     <i class="fa-solid fa-circle"></i>
                     <i class="fa-solid fa-circle"></i>
@@ -366,8 +367,8 @@
                 </div>
               </article>
 
-              <article>
-                <div class="bloc__carousel--picture">
+              <article class="column">
+                <div class="column__picture">
                   <button class="circle__heart">
                     <i class="fa-regular fa-heart"></i>
                   </button>
@@ -375,14 +376,14 @@
                     src="./assets/img/paris-visit7.jpg"
                     alt="photo du musée d'orsay"
                   />
-                  <div class="carousel__brand">
+                  <div class="column__brand">
                     <i class="fa-brands fa-earlybirds"></i>
                     <p>2022</p>
                   </div>
                 </div>
-                <div class="bloc__carousel--text">
+                <div class="column__content">
                   <h5>Musée d'Orsay</h5>
-                  <div class="carousel__rank">
+                  <div class="column__rank">
                     <i class="fa-solid fa-circle"></i>
                     <i class="fa-solid fa-circle"></i>
                     <i class="fa-solid fa-circle"></i>
@@ -394,8 +395,8 @@
                 </div>
               </article>
 
-              <article>
-                <div class="bloc__carousel--picture">
+              <article class="column">
+                <div class="column__picture">
                   <button class="circle__heart">
                     <i class="fa-regular fa-heart"></i>
                   </button>
@@ -403,14 +404,14 @@
                     src="./assets/img/paris-visit8.jpg"
                     alt="photo du marché aux puces de saint ouen"
                   />
-                  <div class="carousel__brand">
+                  <div class="column__brand">
                     <i class="fa-brands fa-earlybirds"></i>
                     <p>2022</p>
                   </div>
                 </div>
-                <div class="bloc__carousel--text">
+                <div class="column__content">
                   <h5>Marché aux Puces de Saint-Ouen</h5>
-                  <div class="carousel__rank">
+                  <div class="column__rank">
                     <i class="fa-solid fa-circle"></i>
                     <i class="fa-solid fa-circle"></i>
                     <i class="fa-solid fa-circle"></i>
@@ -428,34 +429,34 @@
           </div>
 
           <!-- Section 3 - #immanquables : Div Se-restaurer -->
-          <!-- Se restaurer : Div Infos -->
-          <div class="bloc">
-            <div class="bloc__infos">
+          <div class="carousel-container">
+            <!-- Se divertir : Div Infos  -->
+            <div class="documentation">
               <h4>Se restaurer</h4>
-              <p class="bloc__infos--text">
+              <p class="documentation__content">
                 Bistrots et bars typiques, et plus encore à Paris.
               </p>
-              <a class="bloc__infos--link" href="#">Tout afficher</a>
+              <a class="documentation__link" href="#">Tout afficher</a>
             </div>
-            <!-- Se restaurer : carousel  -->
-            <div class="bloc__carousel">
-              <article>
-                <div class="bloc__carousel--picture">
+            <!-- Se divertir : carousel  -->
+            <div class="display">
+              <article class="column">
+                <div class="column__picture">
                   <button class="circle__heart">
                     <i class="fa-regular fa-heart"></i>
                   </button>
                   <img
                     src="./assets/img/meal-frenchie.jpg"
-                    alt="photo d'une assiette de légumes"
+                    alt="photo d'un plate de chez Frenchie'"
                   />
-                  <div class="carousel__brand">
+                  <div class="column__brand">
                     <i class="fa-brands fa-earlybirds"></i>
                     <p>2022</p>
                   </div>
                 </div>
-                <div class="bloc__carousel--text">
+                <div class="column__content">
                   <h5>Frenchie</h5>
-                  <div class="carousel__rank">
+                  <div class="column__rank">
                     <i class="fa-solid fa-circle"></i>
                     <i class="fa-solid fa-circle"></i>
                     <i class="fa-solid fa-circle"></i>
@@ -469,27 +470,27 @@
                 </div>
               </article>
 
-              <article>
-                <div class="bloc__carousel--picture">
+              <article class="column">
+                <div class="column__picture">
                   <button class="circle__heart">
                     <i class="fa-regular fa-heart"></i>
                   </button>
                   <img
                     src="./assets/img/meal-114faubourg.jpg"
-                    alt="photo d'une poelée de légumes'"
+                    alt="photo d'un plat de chez 114 faubourg'"
                   />
-                  <div class="carousel__brand">
+                  <div class="column__brand">
                     <i class="fa-brands fa-earlybirds"></i>
                     <p>2022</p>
                   </div>
                 </div>
-                <div class="bloc__carousel--text">
+                <div class="column__content">
                   <h5>114 Faubourg</h5>
-                  <div class="carousel__rank">
+                  <div class="column__rank">
                     <i class="fa-solid fa-circle"></i>
                     <i class="fa-solid fa-circle"></i>
                     <i class="fa-solid fa-circle"></i>
-                    <i class="fa-solid fa-circle-half-stroke"></i>
+                    <i class="fa-solid fa-circle"></i>
                     <i class="fa-regular fa-circle"></i>
                     <p>1 754</p>
                   </div>
@@ -497,23 +498,23 @@
                 </div>
               </article>
 
-              <article>
-                <div class="bloc__carousel--picture">
+              <article class="column">
+                <div class="column__picture">
                   <button class="circle__heart">
                     <i class="fa-regular fa-heart"></i>
                   </button>
                   <img
                     src="./assets/img/meal-verjus.jpg"
-                    alt="photo d'une potage"
+                    alt="photo d'un plat de chez Verjus'"
                   />
-                  <div class="carousel__brand">
+                  <div class="column__brand">
                     <i class="fa-brands fa-earlybirds"></i>
                     <p>2022</p>
                   </div>
                 </div>
-                <div class="bloc__carousel--text">
+                <div class="column__content">
                   <h5>Verjus</h5>
-                  <div class="carousel__rank">
+                  <div class="column__rank">
                     <i class="fa-solid fa-circle"></i>
                     <i class="fa-solid fa-circle"></i>
                     <i class="fa-solid fa-circle"></i>
@@ -525,23 +526,23 @@
                 </div>
               </article>
 
-              <article>
-                <div class="bloc__carousel--picture">
+              <article class="column">
+                <div class="column__picture">
                   <button class="circle__heart">
                     <i class="fa-regular fa-heart"></i>
                   </button>
                   <img
                     src="./assets/img/meal-aspic.jpg"
-                    alt="photo d'un plat"
+                    alt="photo d'un plat de chez aspic'"
                   />
-                  <div class="carousel__brand">
+                  <div class="column__brand">
                     <i class="fa-brands fa-earlybirds"></i>
                     <p>2022</p>
                   </div>
                 </div>
-                <div class="bloc__carousel--text">
+                <div class="column__content">
                   <h5>ASPIC</h5>
-                  <div class="carousel__rank">
+                  <div class="column__rank">
                     <i class="fa-solid fa-circle"></i>
                     <i class="fa-solid fa-circle"></i>
                     <i class="fa-solid fa-circle"></i>
@@ -553,51 +554,51 @@
                 </div>
               </article>
 
-              <article>
-                <div class="bloc__carousel--picture">
+              <article class="column">
+                <div class="column__picture">
                   <button class="circle__heart">
                     <i class="fa-regular fa-heart"></i>
                   </button>
                   <img
                     src="./assets/img/meal-bistrotchic.jpg"
-                    alt="photo d'une assiette de viande'"
+                    alt="photo d'un plat de chez bistrot chic'"
                   />
-                  <div class="carousel__brand">
+                  <div class="column__brand">
                     <i class="fa-brands fa-earlybirds"></i>
                     <p>2022</p>
                   </div>
                 </div>
-                <div class="bloc__carousel--text">
+                <div class="column__content">
                   <h5>Bistrot chic</h5>
-                  <div class="carousel__rank">
+                  <div class="column__rank">
                     <i class="fa-solid fa-circle"></i>
                     <i class="fa-solid fa-circle"></i>
                     <i class="fa-solid fa-circle"></i>
                     <i class="fa-solid fa-circle"></i>
                     <i class="fa-solid fa-circle-half-stroke"></i>
-                    <p>1 345</p>
+                    <p>2 981</p>
                   </div>
-                  <p>€€€ · Française, Européenne, Saine, Moderne</p>
+                  <p>€€€€ · Française, Européenne, Saine, Moderne</p>
                 </div>
               </article>
 
-              <article>
-                <div class="bloc__carousel--picture">
+              <article class="column">
+                <div class="column__picture">
                   <button class="circle__heart">
                     <i class="fa-regular fa-heart"></i>
                   </button>
                   <img
                     src="./assets/img/meal-viveleshuitres.jpg"
-                    alt="photo d'une assiette d'huitres'"
+                    alt="photo d'un plat de chez vive les huitres'"
                   />
-                  <div class="carousel__brand">
+                  <div class="column__brand">
                     <i class="fa-brands fa-earlybirds"></i>
                     <p>2022</p>
                   </div>
                 </div>
-                <div class="bloc__carousel--text">
+                <div class="column__content">
                   <h5>Vive les huîtres</h5>
-                  <div class="carousel__rank">
+                  <div class="column__rank">
                     <i class="fa-solid fa-circle"></i>
                     <i class="fa-solid fa-circle"></i>
                     <i class="fa-solid fa-circle"></i>
@@ -615,44 +616,44 @@
 
         <!-- Main : Section 4 - #guides -->
         <section id="guides">
-          <h4>Guides de voyageurs</h4>
-          <div class="bloc guide">
-            <article class="bloc__picture--guide">
+          <h2>Guides de voyageurs</h2>
+          <div class="article__carousel">
+            <article class="article">
               <img
                 src="./assets/img/guide-voyageur1.jpg"
                 alt="photo d'un vide grenier"
               />
               <h5>Best summer things to do in Paris | Eatwith</h5>
-              <p class="number-of-article">36 articles</p>
-              <div class="carousel__rank">
+              <p class="article__content">36 articles</p>
+              <div class="article__signature">
                 <img src="./assets/img/logo-fork.jpg" alt="logo de the fork" />
-                <p class="ranked__from">Par <strong>Eatwith</strong></p>
+                <p>Par <strong>Eatwith</strong></p>
               </div>
             </article>
 
-            <article class="bloc__picture--guide">
+            <article class="article">
               <img
                 src="./assets/img/guide-voyageur2.jpg"
                 alt="photo de l'intérieur d'un monument"
               />
               <h5>Les 10 monuments et musées de Paris à faire</h5>
-              <p class="number-of-article">10 articles</p>
-              <div class="carousel__rank">
+              <p class="article__content">10 articles</p>
+              <div class="article__signature">
                 <img src="./assets/img/logo-topito.jpg" alt="logo de topito" />
-                <p class="ranked__from">Par <strong>Topito</strong></p>
+                <p>Par <strong>Topito</strong></p>
               </div>
             </article>
 
-            <article class="bloc__picture--guide">
+            <article class="article">
               <img
                 src="./assets/img/guide-voyageur3.jpg"
                 alt="photo des catacombes de paris"
               />
               <h5>Top 10 des choses à faire ou à voir dans le 14ème</h5>
-              <p class="number-of-article">10 articles</p>
-              <div class="carousel__rank">
+              <p class="article__content">10 articles</p>
+              <div class="article__signature">
                 <img src="./assets/img/logo-topito.jpg" alt="logo de topito" />
-                <p class="ranked__from">Par <strong>Topito</strong></p>
+                <p>Par <strong>Topito</strong></p>
               </div>
             </article>
           </div>
@@ -664,15 +665,30 @@
 
     <!-- Footer -->
     <footer>
-      <img src="./assets/img/logo-favicon.svg" alt="logo de TripAdvisor" />
-      <p>
-        Made at
-        <a href="https://www.lereacteur.io/" target="_blank">Le Reacteur</a> by
-        <a href="https://github.com/LucileBch" target="_blank"
-          >Lucile Bouchire</a
-        >
-        - Promo février 2024
-      </p>
+      <div class="container">
+        <img
+          class="footer__image"
+          src="./assets/img/logo-favicon.svg"
+          alt="logo de TripAdvisor"
+        />
+        <p>
+          Made at
+          <a
+            class="footer__link"
+            href="https://www.lereacteur.io/"
+            target="_blank"
+            >Le Reacteur</a
+          >
+          by
+          <a
+            class="footer__link"
+            href="https://github.com/LucileBch"
+            target="_blank"
+            >Lucile Bouchire</a
+          >
+          - Promo février 2024
+        </p>
+      </div>
     </footer>
     <!-- End Footer -->
   </body>

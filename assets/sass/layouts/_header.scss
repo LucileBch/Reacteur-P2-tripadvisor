@@ -1,0 +1,49 @@
+/* ----- Header ----- */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  width: 100%;
+  border-bottom: $button-hover-color 1px solid;
+
+  background-color: $white;
+
+  > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 0;
+  }
+  .header__logo {
+    width: 185px;
+  }
+}
+
+/* ----- Header Navbar ----- */
+.navbar {
+  > ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    padding: 1rem 1.2rem;
+
+    font-family: $bold-font;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: $black;
+
+    &:hover {
+      border-radius: 3rem;
+      @include hover-background;
+    }
+  }
+}

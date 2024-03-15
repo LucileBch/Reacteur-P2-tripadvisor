@@ -1,0 +1,26 @@
+/* ----- Mini subnav ----- */
+.subnav--mini {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 1.2rem;
+}
+
+.navmini {
+  display: flex;
+  gap: 10px;
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: $black;
+
+    & span:hover {
+      text-decoration: underline;
+      color: $subtitles-color;
+    }
+  }
+}

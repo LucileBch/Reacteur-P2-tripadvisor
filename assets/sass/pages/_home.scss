@@ -1,0 +1,110 @@
+/* ----- Home Page ----- */
+
+// Section 1 : #presentation
+#presentation {
+  margin-bottom: 40px;
+}
+
+h1 > span {
+  color: $primary-color;
+}
+
+.infos__content {
+  margin-bottom: 35px;
+  color: $subtitles-color;
+  a {
+    color: $subtitles-color;
+    text-decoration: underline;
+  }
+}
+
+.images {
+  display: flex;
+  gap: 4px;
+
+  margin-bottom: 25px;
+  height: 43rem;
+
+  &__unique {
+    position: relative;
+    width: 60%;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      &:hover {
+        @include hover-opacity;
+        cursor: pointer;
+      }
+    }
+
+    .btn {
+      position: absolute;
+      left: 1.6rem;
+      bottom: 1.6rem;
+    }
+  }
+
+  &__doble {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    > img {
+      width: 48rem;
+      height: calc(50% - 0.2rem);
+      object-fit: cover;
+      &:hover {
+        @include hover-opacity;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+// Section 2 : #organisation
+#organisation {
+  display: flex;
+  gap: 10%;
+  margin-bottom: 80px;
+}
+
+.description {
+  width: 50%;
+  &__content {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: $subtitles-color;
+  }
+}
+
+// Section 3 : #immanquable => Se divertir / Se restaurer
+#immanquables,
+#guides {
+  margin-bottom: 120px;
+}
+
+.carousel-container {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.documentation {
+  flex: 1;
+  padding-right: 30px;
+
+  &__content {
+    margin: 20px 0;
+
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+
+  &__link {
+    font-size: 1.6rem;
+    color: $subtitles-color;
+    text-decoration: underline;
+  }
+}

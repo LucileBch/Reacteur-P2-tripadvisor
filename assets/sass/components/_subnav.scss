@@ -1,0 +1,30 @@
+/* ----- Subnav ----- */
+.subnav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-bottom: 25px;
+
+  &__option {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 5px;
+
+    width: 16%;
+    height: 6.4rem;
+    padding: 1.2rem 1.6rem;
+    border: $black 0.1rem solid;
+    border-radius: 1rem;
+
+    font-family: $bold-font;
+    font-size: 1.6rem;
+    color: $black;
+
+    &:hover {
+      background-color: $black;
+      color: $white;
+    }
+  }
+}

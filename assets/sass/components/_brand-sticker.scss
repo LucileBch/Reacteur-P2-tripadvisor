@@ -1,0 +1,21 @@
+/* ----- TripAdvisor Brand Sticker ----- */
+.column__brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+
+  position: absolute;
+  bottom: 1.2rem;
+  left: 1rem;
+
+  padding: 0.5rem 0.3rem;
+  background-color: $secondary-color;
+
+  border-radius: 2rem 2rem 0.6rem 0.6rem;
+
+  p {
+    font-family: $bold-font;
+    font-size: 1rem;
+  }
+}

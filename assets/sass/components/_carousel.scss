@@ -1,0 +1,62 @@
+/* ----- Carousel ----- */
+.display {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  overflow-x: scroll;
+  gap: 15px;
+  flex: 3;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.column {
+  flex-shrink: 0;
+  width: calc((100% - 3rem) / 3);
+
+  &__picture {
+    position: relative;
+    margin-bottom: 12px;
+    img {
+      width: 100%;
+      height: 19.5rem;
+      object-fit: cover;
+    }
+  }
+
+  &__content p {
+    color: $subtitles-color;
+    line-height: 1.6rem;
+  }
+
+  &__rank {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+
+    margin-bottom: 6px;
+
+    i {
+      font-size: 1.2rem;
+      color: $dot-color;
+    }
+    p {
+      margin-left: 6px;
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+    h5 {
+      text-decoration: underline;
+    }
+    .column__picture {
+      @include hover-opacity;
+    }
+  }
+}

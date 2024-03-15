@@ -1,0 +1,20 @@
+/* ----- Footer ----- */
+footer {
+  background-color: $tertiary-color;
+
+  > .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 5rem 0;
+  }
+  .footer__image {
+    width: 3rem;
+  }
+  .footer__link {
+    font-family: Ts-Med;
+    font-weight: bold;
+    color: $black;
+  }
+}

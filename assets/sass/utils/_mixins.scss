@@ -1,0 +1,12 @@
+/* ----- Mixins ----- */
+
+// hover for black button and pictures
+@mixin hover-opacity {
+  opacity: 0.8;
+}
+
+// hover for heart circle and nav__links
+@mixin hover-background {
+  background-color: $button-hover-color;
+  cursor: pointer;
+}
