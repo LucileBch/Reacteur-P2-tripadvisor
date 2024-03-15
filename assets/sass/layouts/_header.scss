@@ -13,11 +13,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    padding: 10px 0;
+    padding: 1rem 0;
+    // responsive BreakingPoint 1184px
+    @media (max-width: 1184px) {
+      padding: 1rem 2rem;
+    }
   }
   .header__logo {
-    width: 185px;
+    width: 18.5rem;
   }
 }
 
@@ -26,7 +29,11 @@ header {
   > ul {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 2rem;
+    // responsive BreakingPoint 1024px
+    @media (max-width: 1024px) {
+      gap: 0;
+    }
   }
 
   &__link {
@@ -44,6 +51,13 @@ header {
     &:hover {
       border-radius: 3rem;
       @include hover-background;
+    }
+
+    // responsive BreakingPoint 1024px
+    @media (max-width: 1024px) {
+      > span {
+        display: none;
+      }
     }
   }
 }

@@ -5,17 +5,37 @@
   width: 40%;
   border-radius: 1.6rem;
 
+  // responsive BreakingPoint 1024px
+  @media (max-width: 1024px) {
+    display: flex;
+    width: 100%;
+  }
+
   &__content {
     padding: 3.2rem;
     background-color: $primary-color;
     > p {
       margin-bottom: 24px;
     }
+    // responsive BreakingPoint 1024px
+    @media (max-width: 1024px) {
+      width: 50%;
+    }
+  }
+
+  .container__image {
+    // responsive BreakingPoint 1024px
+    @media (max-width: 1024px) {
+      width: 50%;
+    }
   }
 
   &__image {
     width: 100%;
-    height: 19rem;
     object-fit: cover;
+    // responsive BreakingPoint 1024px
+    @media (max-width: 1024px) {
+      height: 100%;
+    }
   }
 }

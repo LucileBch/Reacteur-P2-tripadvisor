@@ -17,6 +17,11 @@
   flex-shrink: 0;
   width: calc((100% - 3rem) / 3);
 
+  // responsive BreakingPoint 1024px
+  @media (max-width: 1024px) {
+    width: calc((100% - 3rem) / 2.5);
+  }
+
   &__picture {
     position: relative;
     margin-bottom: 12px;
