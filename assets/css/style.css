@@ -37,6 +37,11 @@ html {
   width: 1135px;
   margin: 0 auto;
 }
+@media (max-width: 1184px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
 
 a {
   text-decoration: none;
@@ -116,12 +121,17 @@ h5 {
   gap: 10px;
   margin-bottom: 25px;
 }
+@media (max-width: 1184px) {
+  .subnav {
+    flex-wrap: wrap;
+  }
+}
 .subnav__option {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   gap: 5px;
-  width: 16%;
+  width: calc((100% - 5rem) / 6);
   height: 6.4rem;
   padding: 1.2rem 1.6rem;
   border: #000000 0.1rem solid;
@@ -130,9 +140,22 @@ h5 {
   font-size: 1.6rem;
   color: #000000;
 }
+@media (max-width: 1184px) {
+  .subnav__option {
+    width: calc((100% - 3rem) / 4);
+  }
+}
 .subnav__option:hover {
   background-color: #000000;
   color: #ffffff;
+}
+.subnav__option--responsive {
+  display: none;
+}
+@media (max-width: 1184px) {
+  .subnav__option--responsive {
+    display: inherit;
+  }
 }
 
 /* ----- Mini subnav ----- */
@@ -392,6 +415,11 @@ h1 > span {
   gap: 4px;
   margin-bottom: 25px;
   height: 43rem;
+}
+@media (max-width: 1184px) {
+  .images {
+    height: 37rem;
+  }
 }
 .images__unique {
   position: relative;

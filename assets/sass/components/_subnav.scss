@@ -3,28 +3,44 @@
   display: flex;
   align-items: center;
   gap: 10px;
-
   margin-bottom: 25px;
+
+  // responsive BreakingPoint 1184px
+  @media (max-width: 1184px) {
+    flex-wrap: wrap;
+  }
 
   &__option {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: 5px;
-
-    width: 16%;
+    width: calc((100% - 5rem) / 6);
     height: 6.4rem;
     padding: 1.2rem 1.6rem;
     border: $black 0.1rem solid;
     border-radius: 1rem;
-
     font-family: $bold-font;
     font-size: 1.6rem;
     color: $black;
 
+    // responsive BreakingPoint 1184px
+    @media (max-width: 1184px) {
+      width: calc((100% - 3rem) / 4);
+    }
+
     &:hover {
       background-color: $black;
       color: $white;
+    }
+
+    &--responsive {
+      display: none;
+
+      // responsive BreakingPoint 1184px
+      @media (max-width: 1184px) {
+        display: inherit;
+      }
     }
   }
 }

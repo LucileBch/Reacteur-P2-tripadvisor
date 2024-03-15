@@ -25,6 +25,11 @@ h1 > span {
   margin-bottom: 25px;
   height: 43rem;
 
+  // responsive BreakingPoint 1184px
+  @media (max-width: 1184px) {
+    height: 37rem;
+  }
+
   &__unique {
     position: relative;
     width: 60%;
