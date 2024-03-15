@@ -2,6 +2,7 @@
 // Utils
 @import "./utils/variables";
 @import "./utils/mixins";
+@import "./utils/_placeholders";
 
 // Base
 @import "./base/reset";
@@ -18,6 +19,7 @@
 @import "./components/heart-circle";
 @import "./components/brand-sticker";
 @import "./components/guide-carousel";
+@import "./components/modal";
 
 // Layouts
 @import "./layouts/header";

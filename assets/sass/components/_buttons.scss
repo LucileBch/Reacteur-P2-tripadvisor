@@ -2,7 +2,6 @@
 .btn {
   padding: 1rem 1.2rem;
   border: none;
-
   font-family: $bold-font;
   font-size: 1.6rem;
   background-color: $black;
@@ -18,7 +17,6 @@
   display: flex;
   align-items: center;
   gap: 7px;
-
   border-radius: 3rem;
 
   > span {
@@ -29,4 +27,10 @@
 .button--square {
   padding: 1.8rem 2rem;
   border-radius: 1.4rem;
+}
+
+.button--form {
+  background-color: $dot-color;
+  border-radius: 0.8rem;
+  width: 18rem;
 }

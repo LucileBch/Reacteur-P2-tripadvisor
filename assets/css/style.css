@@ -3,12 +3,21 @@
 /* Colors */
 /* Fonts */
 /* ----- Mixins ----- */
+/* ----- Placeholders ----- */
+/* %form-typography */
+@import url("https://meyerweb.com/eric/tools/css/reset/reset.css");
+.form > p {
+  margin-bottom: 4rem;
+  font-family: "TS-Med";
+  font-size: 2.4rem;
+  text-align: center;
+}
+
 /*     RESET STYLE SHEET     */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://meyerweb.com/eric/tools/css/reset/reset.css");
 /*     FONTS STYLE SHEET     */
 @font-face {
   font-family: "TS-Reg";
@@ -117,6 +126,12 @@ h5 {
 .button--square {
   padding: 1.8rem 2rem;
   border-radius: 1.4rem;
+}
+
+.button--form {
+  background-color: #04aa6c;
+  border-radius: 0.8rem;
+  width: 18rem;
 }
 
 /* ----- Subnav ----- */
@@ -407,6 +422,61 @@ h5 {
 .article__signature strong {
   font-family: "TS-Med";
   font-weight: bold;
+}
+
+/* ----- Modal ----- */
+.modal {
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 15;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.form {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  position: relative;
+  width: 43rem;
+  padding: 4rem 3rem;
+  border-radius: 1.8rem;
+  margin: auto;
+  background-color: #ffffff;
+}
+.form .fa-xmark {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 2.4rem;
+  color: #333333;
+  opacity: 0.8;
+}
+.form .fa-xmark:hover {
+  cursor: pointer;
+  color: #000000;
+}
+.form__elements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+.form__elements input,
+.form__elements textarea {
+  width: 70%;
+  padding: 1.6rem 1rem;
+  outline: none;
+  border: #000000 2px solid;
+  font-family: "TS-Med";
+  font-size: 1.6rem;
+}
+.form__elements textarea {
+  resize: none;
+  height: 12rem;
 }
 
 /* ----- Header ----- */

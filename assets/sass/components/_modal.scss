@@ -1,0 +1,62 @@
+/* ----- Modal ----- */
+.modal {
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 15;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.form {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  position: relative;
+  width: 43rem;
+  padding: 4rem 3rem;
+  border-radius: 1.8rem;
+  margin: auto;
+  background-color: $white;
+
+  .fa-xmark {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 2.4rem;
+    color: $subtitles-color;
+    opacity: 0.8;
+    &:hover {
+      cursor: pointer;
+      color: $black;
+    }
+  }
+
+  > p {
+    @extend %form-typography;
+  }
+
+  &__elements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+
+    input,
+    textarea {
+      width: 70%;
+      padding: 1.6rem 1rem;
+      outline: none;
+      border: $black 2px solid;
+      font-family: $bold-font;
+      font-size: 1.6rem;
+    }
+
+    textarea {
+      resize: none;
+      height: 12rem;
+    }
+  }
+}
