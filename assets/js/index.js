@@ -7,6 +7,7 @@ document.addEventListener(`DOMContentLoaded`, () => {
   const body = document.querySelector(`body`);
   const heartButtons = document.querySelectorAll(`.circle__heart`);
   const contactButton = document.querySelector(`.btn--contact`);
+  const closeButton = document.querySelector(`.fa-xmark`);
   const modal = document.querySelector(`.modal`);
 
   // Header's border bottom display conditions
@@ -29,5 +30,11 @@ document.addEventListener(`DOMContentLoaded`, () => {
   contactButton.addEventListener(`click`, () => {
     modal.classList.remove(`modal__hidden`);
     body.classList.add(`scroll--disable`);
+  });
+
+  // Close Modal
+  closeButton.addEventListener(`click`, () => {
+    modal.classList.add(`modal__hidden`);
+    body.classList.remove(`scroll--disable`);
   });
 });
