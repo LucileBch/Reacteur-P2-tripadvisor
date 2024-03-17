@@ -17,11 +17,11 @@
   flex-shrink: 0;
   width: calc((100% - 3rem) / 3);
 
-  // responsive BreakingPoint 1024px
+  // responsive BreakPoint 1024px
   @media (max-width: 1024px) {
     width: calc((100% - 3rem) / 2.5);
   }
-  // responsive BreakingPoint 768px
+  // responsive BreakPoint 768px
   @media (max-width: 768px) {
     width: calc((100% - 3rem) / 1.5);
   }
@@ -33,7 +33,7 @@
       width: 100%;
       height: 19.5rem;
       object-fit: cover;
-      // responsive BreakingPoint 768px
+      // responsive BreakPoint 768px
       @media (max-width: 768px) {
         height: 32rem;
       }

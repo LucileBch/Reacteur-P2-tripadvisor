@@ -5,11 +5,11 @@
   gap: 10px;
   margin-bottom: 25px;
 
-  // responsive BreakingPoint 1184px
+  // responsive BreakPoint 1184px
   @media (max-width: 1184px) {
     flex-wrap: wrap;
   }
-  // responsive BreakingPoint 768px
+  // responsive BreakPoint 768px
   @media (max-width: 768px) {
     flex-wrap: nowrap;
     overflow: hidden;
@@ -30,11 +30,11 @@
     font-size: 1.6rem;
     color: $black;
 
-    // responsive BreakingPoint 1184px
+    // responsive BreakPoint 1184px
     @media (max-width: 1184px) {
       width: calc((100% - 3rem) / 4);
     }
-    // responsive BreakingPoint 768px
+    // responsive BreakPoint 768px
     @media (max-width: 768px) {
       flex-shrink: 0;
     }
@@ -47,7 +47,7 @@
     &--responsive {
       display: none;
 
-      // responsive BreakingPoint 1184px
+      // responsive BreakPoint 1184px
       @media (max-width: 1184px) {
         display: inherit;
       }

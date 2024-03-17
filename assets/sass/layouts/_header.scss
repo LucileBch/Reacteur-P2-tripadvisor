@@ -4,7 +4,6 @@ header {
   top: 0;
   z-index: 10;
   width: 100%;
-  border-bottom: $button-hover-color 1px solid;
   background-color: $white;
 
   > .container {
@@ -12,14 +11,14 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0;
-    // responsive BreakingPoint 1184px
+    // responsive BreakPoint 1184px
     @media (max-width: 1184px) {
       padding: 1rem 2rem;
     }
 
     > i {
       font-size: 1.8rem;
-      // responsive BreakingPoint 769px
+      // responsive BreakPoint 769px
       @media (min-width: 769px) {
         display: none;
       }
@@ -28,11 +27,14 @@ header {
   .header__logo {
     width: 18.5rem;
 
-    // responsive BreakingPoint 768px
+    // responsive BreakPoint 768px
     @media (max-width: 768px) {
       width: 13.2rem;
     }
   }
+}
+.header__border {
+  border-bottom: $button-hover-color 2px solid;
 }
 
 /* ----- Header Navbar ----- */
@@ -41,7 +43,7 @@ header {
     display: flex;
     align-items: center;
     gap: 2rem;
-    // responsive BreakingPoint 1024px
+    // responsive BreakPoint 1024px
     @media (max-width: 1024px) {
       gap: 0;
     }
@@ -68,7 +70,7 @@ header {
       @include hover-background;
     }
 
-    // responsive BreakingPoint 1024px
+    // responsive BreakPoint 1024px
     @media (max-width: 1024px) {
       > span {
         display: none;

@@ -25,11 +25,11 @@ h1 > span {
   margin-bottom: 25px;
   height: 43rem;
 
-  // responsive BreakingPoint 1184px
+  // responsive BreakPoint 1184px
   @media (max-width: 1184px) {
     height: 37rem;
   }
-  // responsive BreakingPoint 1024px
+  // responsive BreakPoint 1024px
   @media (max-width: 1024px) {
     height: 27.5rem;
   }
@@ -37,11 +37,11 @@ h1 > span {
   &__unique {
     position: relative;
     width: 60%;
-    // responsive BreakingPoint 1024px
+    // responsive BreakPoint 1024px
     @media (max-width: 1024px) {
       width: 77%;
     }
-    // responsive BreakingPoint 768px
+    // responsive BreakPoint 768px
     @media (max-width: 768px) {
       width: 100%;
     }
@@ -69,11 +69,11 @@ h1 > span {
     width: 40%;
     gap: 4px;
 
-    // responsive BreakingPoint 1024px
+    // responsive BreakPoint 1024px
     @media (max-width: 1024px) {
       width: 33%;
     }
-    // responsive BreakingPoint 768px
+    // responsive BreakPoint 768px
     @media (max-width: 768px) {
       display: none;
     }
@@ -96,7 +96,7 @@ h1 > span {
   gap: 10%;
   margin-bottom: 80px;
 
-  // responsive BreakingPoint 1024px
+  // responsive BreakPoint 1024px
   @media (max-width: 1024px) {
     flex-direction: column;
     gap: 5rem;
@@ -110,13 +110,13 @@ h1 > span {
     font-size: 2rem;
     line-height: 2.4rem;
     color: $subtitles-color;
-    // responsive BreakingPoint 768px
+    // responsive BreakPoint 768px
     @media (max-width: 768px) {
       font-size: 1.6rem;
     }
   }
 
-  // responsive BreakingPoint 1024px
+  // responsive BreakPoint 1024px
   @media (max-width: 1024px) {
     width: 100%;
   }
@@ -132,7 +132,7 @@ h1 > span {
   display: flex;
   margin-bottom: 40px;
 
-  // responsive BreakingPoint 768px
+  // responsive BreakPoint 768px
   @media (max-width: 768px) {
     flex-direction: column;
   }
@@ -142,7 +142,7 @@ h1 > span {
   flex: 1;
   padding-right: 3rem;
 
-  // responsive BreakingPoint 768px
+  // responsive BreakPoint 768px
   @media (max-width: 768px) {
     margin-bottom: 20px;
   }
