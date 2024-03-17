@@ -440,6 +440,13 @@ h5 {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.7);
 }
+.modal__hidden {
+  display: none;
+}
+
+.scroll--disable {
+  overflow: hidden;
+}
 
 .form {
   flex-direction: column;
