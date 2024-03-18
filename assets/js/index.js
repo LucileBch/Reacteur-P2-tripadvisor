@@ -9,6 +9,7 @@ document.addEventListener(`DOMContentLoaded`, () => {
   const contactButton = document.querySelector(`.btn--contact`);
   const closeButton = document.querySelector(`.fa-xmark`);
   const modal = document.querySelector(`.modal`);
+  const contactForm = document.querySelector(`.form__elements`);
 
   // Header's border bottom display conditions
   window.addEventListener(`scroll`, () => {
@@ -36,5 +37,41 @@ document.addEventListener(`DOMContentLoaded`, () => {
   closeButton.addEventListener(`click`, () => {
     modal.classList.add(`modal__hidden`);
     body.classList.remove(`scroll--disable`);
+  });
+
+  // Get form datas
+  //    Preventing default behaviour
+  //    Variables
+  //    Connect to backend and send data
+  //    If success closing Modal
+  contactForm.addEventListener(`submit`, async (event) => {
+    event.preventDefault();
+
+    const firstname = document.querySelector(`#firstname`).value;
+    const lastname = document.querySelector(`#lastname`).value;
+    const email = document.querySelector(`#email`).value;
+    const message = document.querySelector(`#message`).value;
+
+    const data = {
+      firstname: firstname,
+      lastname: lastname,
+      email: email,
+      message: message,
+    };
+
+    try {
+      const response = await axios.post(`http://localhost:3000/form`, data);
+      console.log(response.data.status);
+
+      if (response.data.status === 200) {
+        alert(`Votre formulaire a bien été envoyé`);
+      }
+    } catch (error) {
+      if (error.response.data.message === `Missing parameters`) {
+        alert(`Veuillez remplir tous les champs`);
+      } else {
+        alert(`Une erreur est survenue`);
+      }
+    }
   });
 });
