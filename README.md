@@ -2,10 +2,13 @@
 
 **TripAdvisor copy website** made in context of training at [@Le Reacteur](https://github.com/lereacteur) bootcamp.
 
+Hosted on Netlify : https://reacteur-training-tripadvisor.netlify.app/
+
 - [x] **HTML** & **CSS** static integration
 - [x] Refactoring with **Sass**
-- [x] **Responsive**
-- [ ] Dynamic interaction in **Vanilla JS**
+- [x] **Responsive** : BreakPoints 1184px - 1024px - 768px - 568px
+- [x] Dynamic interaction in **Vanilla JS**
+- [x] Backend **Node JS** (contactForm) : https://github.com/LucileBch/Reacteur-P2-tripadvisor-back.git
 
 ## Content
 
@@ -17,6 +20,7 @@
 - HTML 5
 - CSS 3
 - Sass
+- JavaScript
 
 ## Installation
 
