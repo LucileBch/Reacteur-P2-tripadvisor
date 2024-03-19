@@ -1,7 +1,5 @@
 // ---------- I----------
 document.addEventListener(`DOMContentLoaded`, () => {
-  console.log(`DOM loaded`);
-
   // Variables
   const header = document.querySelector(`header`);
   const body = document.querySelector(`body`);
@@ -37,13 +35,17 @@ document.addEventListener(`DOMContentLoaded`, () => {
   closeButton.addEventListener(`click`, () => {
     modal.classList.add(`modal__hidden`);
     body.classList.remove(`scroll--disable`);
+    contactForm.reset();
   });
 
   // Get form datas
   //    Preventing default behaviour
   //    Variables
   //    Connect to backend and send data
-  //    If success closing Modal
+  //    Conditions :
+  //      If success closing Modal
+  //      If missing parameters => alert msg
+  //      If server pb => alert msg & clean form
   contactForm.addEventListener(`submit`, async (event) => {
     event.preventDefault();
 
@@ -61,16 +63,19 @@ document.addEventListener(`DOMContentLoaded`, () => {
 
     try {
       const response = await axios.post(`http://localhost:3000/form`, data);
-      console.log(response.data.status);
 
       if (response.data.status === 200) {
         alert(`Votre formulaire a bien été envoyé`);
+        contactForm.reset();
+        modal.classList.add(`modal__hidden`);
+        body.classList.remove(`scroll--disable`);
       }
     } catch (error) {
       if (error.response.data.message === `Missing parameters`) {
         alert(`Veuillez remplir tous les champs`);
       } else {
         alert(`Une erreur est survenue`);
+        contactForm.reset();
       }
     }
   });
