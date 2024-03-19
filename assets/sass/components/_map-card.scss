@@ -13,11 +13,6 @@
   @media (max-width: 768px) {
     flex-direction: column;
   }
-  // responsive BreakPoint 568px
-  @media (max-width: 568px) {
-    width: 75%;
-    align-self: center;
-  }
 
   &__content {
     padding: 3.2rem;

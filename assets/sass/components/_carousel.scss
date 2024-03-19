@@ -25,10 +25,6 @@
   @media (max-width: 768px) {
     width: calc((100% - 3rem) / 1.5);
   }
-  // responsive BreakPoint 568px
-  @media (max-width: 568px) {
-    width: calc((100% - 3rem) / 2.5);
-  }
 
   &__picture {
     position: relative;
