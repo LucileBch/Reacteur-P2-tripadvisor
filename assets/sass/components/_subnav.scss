@@ -37,6 +37,12 @@
     // responsive BreakPoint 768px
     @media (max-width: 768px) {
       flex-shrink: 0;
+      font-size: 1.4rem;
+    }
+    // responsive BreakPoint 568px
+    @media (max-width: 568px) {
+      height: 5.4rem;
+      font-size: 1.2rem;
     }
 
     &:hover {

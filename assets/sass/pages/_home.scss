@@ -105,14 +105,21 @@ h1 > span {
 
 .description {
   width: 50%;
+
   &__content {
+    text-align: justify;
     font-family: Georgia, "Times New Roman", Times, serif;
     font-size: 2rem;
     line-height: 2.4rem;
     color: $subtitles-color;
+
     // responsive BreakPoint 768px
     @media (max-width: 768px) {
       font-size: 1.6rem;
+    }
+    // responsive BreakPoint 568px
+    @media (max-width: 568px) {
+      font-size: 1.5rem;
     }
   }
 
@@ -149,15 +156,24 @@ h1 > span {
 
   &__content {
     margin: 20px 0;
-
     font-family: Georgia, "Times New Roman", Times, serif;
     font-size: 1.8rem;
     line-height: 2.2rem;
+
+    // responsive BreakPoint 568px
+    @media (max-width: 568px) {
+      font-size: 1.6rem;
+    }
   }
 
   &__link {
     font-size: 1.6rem;
     color: $subtitles-color;
     text-decoration: underline;
+
+    // responsive BreakPoint 568px
+    @media (max-width: 568px) {
+      font-size: 1.4rem;
+    }
   }
 }
