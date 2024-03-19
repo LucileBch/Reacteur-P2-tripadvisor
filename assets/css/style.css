@@ -200,8 +200,12 @@ h5 {
 }
 @media (max-width: 568px) {
   .subnav__option {
+    flex-direction: column;
+    align-items: center;
     height: 5.4rem;
+    padding: 0.6rem;
     font-size: 1.2rem;
+    text-align: center;
   }
 }
 .subnav__option:hover {
